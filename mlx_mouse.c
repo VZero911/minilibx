@@ -28,7 +28,7 @@ int		mlx_mouse_hide(t_xvar *xvar, t_win_list *win)
 
 int		mlx_mouse_show(t_xvar *xvar, t_win_list *win)
 {
-	XUndefineCursor(xvar->display, win->window);
+	XFixesShowCursor(xvar->display, win->window);
 }
 
 /*
